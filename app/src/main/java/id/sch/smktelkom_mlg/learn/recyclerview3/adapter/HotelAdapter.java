@@ -58,12 +58,14 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
 
     public interface IHotelAdapter {
         void doClick(int pos);
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivFoto;
         TextView tvJudul;
         TextView tvDeskripsi;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -77,6 +79,8 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
                     mIHotelAdapter.doClick(getAdapterPosition());
                 }
             });
+
+
         }
     }
 
